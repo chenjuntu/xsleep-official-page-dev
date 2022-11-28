@@ -1,17 +1,1035 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <!-- =========================================
+    head
+    ========================================== -->
+    <head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
-</head>
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+        <!-- =========================================
+        Basic
+        ========================================== -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-</html>
+        <title>APP ON</title>
+        <meta name="keywords" content="APP ON, HTML5, CSS3, responsive, landing page, template" />
+        <meta name="author" content="Jthemes" />
+        <meta name="robots" content="index follow"/>
+        <meta name="description" content="APP ON - Responsive HTML5 / CSS3 Landing Page Template" />
+
+        <!-- =========================================
+        Mobile Configurations
+        ========================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="GOOGLEBOT" content="index follow"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- =========================================
+        fav & icons for iPhone and iPad
+        ========================================== -->
+        <link rel="shortcut icon" href="images/icons/favicon.png" />
+        <link rel="apple-touch-icon-precomposed" href="images/icons/icon.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/icon@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/icon-72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/icon-72@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icons/icon-60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icons/icon-60@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icons/icon-76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icons/icon-76@2x.png" />
+
+        <!-- =========================================
+        CSS
+        ========================================== -->
+        <link rel="stylesheet" media="screen" href="assets/plugins/bootstrap-3.3.5/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" media="screen" href="assets/plugins/bootstrap-rtl-master/dist/css/bootstrap-rtl.min.css" />
+        <link rel="stylesheet" media="screen" href="css/style.css"/>
+
+        <!-- =========================================
+        Colors
+        ========================================== -->
+        <link rel="stylesheet" href="css/colors/purple-1.css" id="color-switch"/>
+
+        <link rel="stylesheet" media="screen" href="StyleSwitcher/switcher.css" />
+
+        <!-- =========================================
+        Head Libs
+        ========================================== -->
+        <script type="text/javascript" src="js/vendor/modernizr.custom.js"></script>
+
+        <!-- =========================================
+        Google Analytics
+        ========================================== -->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+        <script type="text/javascript">
+                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                e.src='http://www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                ga('create','UA-XXXXX-X', '_trackPageview');
+                ga('send','pageview');
+        </script>
+
+
+    </head><!-- /head -->
+
+
+
+
+    <!-- =========================================
+    body
+    ========================================== -->
+    <body>
+
+
+
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+
+        <!-- =========================================
+        Loader
+        ========================================== -->
+        <div id="Loader">
+            <div id="circle"></div>
+            <div id="circle1"></div>
+        </div>
+
+
+
+
+        <!-- =========================================
+        Menu Section
+        ========================================== -->
+        <section id="dot-menu">
+            <ul>
+                <li>
+                    <a href="#home-section" id="home-sections" title="Home" class="scrollto home" data-placement="right" data-rel="tooltip"><i class="fa fa-home"></i></a>
+                </li>
+                <li>
+                    <a href="#feature-section" id="feature-sections" title="Features" class="scrollto" data-placement="right" data-rel="tooltip"></a></li>
+                <li>
+                    <a href="#works-section" id="works-sections" title="How It Works" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+                <li>
+                    <a href="#portfolio-section" id="portfolio-sections" title="Screenshots" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+                <li>
+                    <a href="#closer-section" id="closer-sections" title="APP View" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+                <li>
+                    <a href="#team-section" id="team-sections" title="Our Team" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+                <li>
+                    <a href="#moreapps-section" id="moreapps-sections" title="More APPs" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+                <li>
+                    <a href="#faq-section" id="faq-sections" title="Faqs" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+                <li>
+                    <a href="#clients-section" id="clients-sections" title="Testimonials" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+                <li>
+                    <a href="#price-section" id="price-sections" title="Pricing Tables" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+                <li>
+                    <a href="#recent-section" id="recent-sections" title="Recent Posts" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+                <li>
+                    <a href="#reach-section" id="reach-sections" title="Contact Us" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+                <li>
+                    <a href="#subscribe-section" id="subscribe-sections" title="Subscribe" class="scrollto" data-placement="right" data-rel="tooltip"></a>
+                </li>
+            </ul>
+        </section>
+
+
+
+
+        <!-- =========================================
+        Home Section
+        ========================================== -->
+        <!-- home-section -->
+        <section class="image-slider" id="home-section">
+            <!-- home-section-wrapper -->
+            <div id="home-section-wrapper">
+
+                <!-- container -->
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+
+
+                        <!-- col-md-12 -->
+                        <div class="col-md-12">
+
+                            <!-- slogan -->
+                            <div class="slogan" data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:500, repeat: true}">
+                                <h1>XSleep, sleeping in love</h1>
+                            </div><!-- /slogan -->
+
+                            <!-- desc -->
+                            <div class="desc" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500, repeat: true}">
+                                <p>XSleep is an app designed to build you a joyful sleeping community, in here you can find a healthy sleep is just so simple</p>
+                            </div><!-- /desc -->
+
+                            <!-- buttons -->
+                            <div class="buttons" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500, repeat: true}">
+                                <a class="btn btn-lg btn-nesto-home" href="https://apps.apple.com/ca/app/xsleep/id1629053904" title="Download on the App Store">
+                                    <i class="fa fa-apple"></i> Download on the App Store
+                                </a>
+                                <a class="btn btn-lg btn-nesto-home" href="https://play.google.com/store/apps/details?id=com.sdcx.xsleep" title="Get it on Google Play">
+                                    <i class="fa fa-android"></i> Get it on Google Play
+                                </a>
+                            </div><!-- /buttons -->
+
+                        </div><!-- /col-md-12 -->
+
+
+                        <!-- col-md-4 left -->
+                        <div class="col-md-4 left">
+
+
+                            <!-- feature-box-style-1 -->
+                            <div class="feature-box-style-1" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:700, repeat: true}">
+
+                                <!-- feature-icon -->
+                                <div class="feature-icon">
+                                    <i class="fa fa-check-circle-o"></i>
+                                </div><!-- /feature-icon -->
+
+                                <!-- feature-title -->
+                                <div class="feature-title">
+                                    <h4>Sleep-aid music</h4>
+                                </div><!-- /feature-title -->
+
+                                <!-- feature-desc -->
+                                <div class="feature-desc">
+                                    <p>In Xsleep, we provide types of sleep-aid music to help you fall asleep sooner.</p>
+                                </div><!-- /feature-desc -->
+
+                            </div><!-- /feature-box-style-1 -->
+
+
+                            <!-- feature-box-style-1 -->
+                            <div class="feature-box-style-1" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:900, repeat: true}">
+
+                                <!-- feature-icon -->
+                                <div class="feature-icon">
+                                    <i class="fa fa-check-circle-o"></i>
+                                </div><!-- /feature-icon -->
+
+                                <!-- feature-title -->
+                                <div class="feature-title">
+                                    <h4>Sleep-buddy matching</h4>
+                                </div><!-- /feature-title -->
+
+                                <!-- feature-desc -->
+                                <div class="feature-desc">
+                                    <p>You can match buddies with our matching system to share your story before bed.</p>
+                                </div><!-- /feature-desc -->
+
+                            </div><!-- /feature-box-style-1 -->
+
+
+                        </div><!-- /col-md-4 left -->
+
+
+                        <!-- col-md-4 -->
+                        <div class="col-md-4">
+
+                            <!-- feature-home-image -->
+                            <div class="feature-home-image" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:700, repeat: true}">
+                                <img src="images/feature-images/xsleep_main_ios.png" alt="Feature Image" />
+                            </div><!-- /feature-home-image -->
+
+                        </div><!-- /col-md-4 -->
+
+
+                        <!-- col-md-4 right -->
+                        <div class="col-md-4 right">
+
+
+                            <!-- feature-box-style-1 -->
+                            <div class="feature-box-style-1" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:700, repeat: true}">
+
+                                <!-- feature-icon -->
+                                <div class="feature-icon">
+                                    <i class="fa fa-check-circle-o"></i>
+                                </div><!-- /feature-icon -->
+
+                                <!-- feature-title -->
+                                <div class="feature-title">
+                                    <h4>Sleeping time report</h4>
+                                </div><!-- /feature-title -->
+
+                                <!-- feature-desc -->
+                                <div class="feature-desc">
+                                    <p>You can use Xsleep to keep track of your sleeping time and it will aid you to obey a good routine.</p>
+                                </div><!-- /feature-desc -->
+
+                            </div><!-- /feature-box-style-1 -->
+
+
+                            <!-- feature-box-style-1 -->
+                            <div class="feature-box-style-1" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:900, repeat: true}">
+
+                                <!-- feature-icon -->
+                                <div class="feature-icon">
+                                    <i class="fa fa-check-circle-o"></i>
+                                </div><!-- /feature-icon -->
+
+                                <!-- feature-title -->
+                                <div class="feature-title">
+                                    <h4>Bedroom decoration</h4>
+                                </div><!-- /feature-title -->
+
+                                <!-- feature-desc -->
+                                <div class="feature-desc">
+                                    <p>In Xsleep, you can decorate your virtual bedroom to show your personality</p>
+                                </div><!-- /feature-desc -->
+
+                            </div><!-- /feature-box-style-1 -->
+
+
+                        </div><!-- /col-md-4 right -->
+
+
+                    </div><!-- /row -->
+                </div><!-- /container -->
+
+            </div><!-- /home-section-wrapper -->
+        </section><!-- /home-section -->
+
+        <!-- =========================================
+        Quick glance at our features
+        ========================================== -->
+        <!-- works-section -->
+        <section id="works-section">
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+
+                    <!-- col-md-12 -->
+                    <div class="col-md-12">
+
+                        <!-- section-title -->
+                        <div class="section-title" data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:500, repeat: true}">
+                            <h1>Quick glance at our features</h1>
+                        </div><!-- /section-title -->
+
+                        <!-- section-desc -->
+                        <div class="section-desc" data-uk-scrollspy="{cls:'uk-animation-fade', delay:700, repeat: true}">
+                            <p>This section gives you a quick overview about our signature features, and there are more features in the app. Download today to discover all of them </p>
+                        </div><!-- /section-desc -->
+
+                    </div><!-- /col-md-12 -->
+
+
+                    <!-- col-md-12 -->
+                    <div class="col-md-12">
+
+
+                        <!-- WorksTabs -->
+                        <div id="WorksTabs">
+
+                            <!-- Tabs List -->
+                            <ul>
+                                <li><a href="#decoration" title="Bedroom">Virtual Bedroom Decoration</a></li>
+                                <li><a href="#match" title="Sleeping-buddy Matching">Sleeping-buddy Matching</a></li>
+                                <li><a href="#music" title="Sleep-aid Music">Sleep-aid Music</a></li>
+                                <li><a href="#sleepReport" title="Sleeping Time Report">Sleeping Time Report</a></li>
+                                
+                            </ul><!-- /Tabs List -->
+
+                            <!-- music -->
+                            <div id="music">
+
+
+                                <!-- col-md-6 no-pad-left -->
+                                <div class="col-md-6 no-pad-left">
+
+
+                                    <!-- section-short-title -->
+                                    <div class="section-short-title">
+                                        <h1>Listen to our top picked music to ease your mind</h1>
+                                    </div><!-- /section-short-title -->
+
+
+                                    <!-- section-short-desc -->
+                                    <div class="section-short-desc">
+                                        <p>Our sleeping specialists have picked some music in different categories for you to relax</p>
+                                    </div><!-- /section-short-desc -->
+
+
+                                    <!-- feature-box-style-2 -->
+                                    <div class="feature-box-style-2">
+
+                                        <!-- feature-icon -->
+                                        <div class="feature-icon">
+                                            <i class="fa fa-tint" aria-hidden="true"></i>
+                                        </div><!-- /feature-icon -->
+
+                                        <!-- feature-title -->
+                                        <div class="feature-title">
+                                            <h4>White Noise</h4>
+                                        </div><!-- /feature-title -->
+                                    </div><!-- /feature-box-style-2 -->
+
+
+                                    <!-- feature-box-style-2 -->
+                                    <div class="feature-box-style-2">
+
+                                        <!-- feature-icon -->
+                                        <div class="feature-icon">
+                                            <i class="fa fa-music" aria-hidden="true"></i>
+                                        </div><!-- /feature-icon -->
+
+                                        <!-- feature-title -->
+                                        <div class="feature-title">
+                                            <h4>Light Music</h4>
+                                        </div><!-- /feature-title -->
+
+                                    </div><!-- /feature-box-style-2 -->
+
+                                    <!-- feature-box-style-2 -->
+                                    <div class="feature-box-style-2">
+
+                                        <!-- feature-icon -->
+                                        <div class="feature-icon">
+                                            <i class="fa fa-headphones" aria-hidden="true"></i>
+                                        </div><!-- /feature-icon -->
+
+                                        <!-- feature-title -->
+                                        <div class="feature-title">
+                                            <h4>Guided Meditation</h4>
+                                        </div><!-- /feature-title -->
+                                        
+                                    </div><!-- /feature-box-style-2 -->
+
+                                </div><!-- /col-md-6 no-pad-left -->
+
+
+                                <!-- col-md-6 no-pad-right -->
+                                <div class="col-md-6 no-pad-right">
+
+                                    <!-- feature-image -->
+                                    <div class="feature-image">
+                                        <img src="images/feature-images/xsleep_music.png" alt="Music Image" />
+                                    </div><!-- /feature-image -->
+
+                                </div><!-- /col-md-6 no-pad-right -->
+
+
+                            </div><!-- /music -->
+
+                            <!-- sleepReport -->
+                            <div id="sleepReport">
+
+
+                                <!-- col-md-6 no-pad-left -->
+                                <div class="col-md-6 no-pad-left">
+
+                                    <!-- feature-image -->
+                                    <div class="feature-image">
+                                        <img src="images/feature-images/daily_tracking.png" alt="Feature Image" />
+                                    </div><!-- /feature-image -->
+
+                                </div><!-- /col-md-6 no-pad-left -->
+
+
+                                <!-- col-md-6 no-pad-right -->
+                                <div class="col-md-6 no-pad-right">
+
+
+                                    <!-- section-short-title -->
+                                    <div class="section-short-title">
+                                        <h1>Build up a good sleeping routine</h1>
+                                    </div><!-- /section-short-title -->
+
+
+                                    <!-- section-short-desc -->
+                                    <div class="section-short-desc">
+                                        <p>You can keep track of your sleep time and gradually to build up a healthy routine</p>
+                                    </div><!-- /section-short-desc -->
+
+
+                                    <!-- feature-box-style-2 -->
+                                    <div class="feature-box-style-2">
+
+                                        <!-- feature-icon -->
+                                        <div class="feature-icon">
+                                            <i class="fa fa-bed" aria-hidden="true"></i>
+                                        </div><!-- /feature-icon -->
+
+                                        <!-- feature-title -->
+                                        <div class="feature-title">
+                                            <h4>Keep track of your sleep time</h4>
+                                        </div><!-- /feature-title -->
+
+                                    </div><!-- /feature-box-style-2 -->
+
+
+                                    <!-- feature-box-style-2 -->
+                                    <div class="feature-box-style-2">
+
+                                        <!-- feature-icon -->
+                                        <div class="feature-icon">
+                                            <i class="fa fa-book" aria-hidden="true"></i>
+                                        </div><!-- /feature-icon -->
+
+                                        <!-- feature-title -->
+                                        <div class="feature-title">
+                                            <h4>Dairy, plan and dream recording</h4>
+                                        </div><!-- /feature-title -->
+
+                                    </div><!-- /feature-box-style-2 -->
+
+                                </div><!-- /col-md-6 no-pad-right -->
+
+
+                            </div><!-- /sleepReport -->
+
+                            <!-- match -->
+                            <div id="match">
+
+
+                                <!-- col-md-6 no-pad-left -->
+                                <div class="col-md-6 no-pad-left">
+
+
+                                    <!-- section-short-title -->
+                                    <div class="section-short-title">
+                                        <h1>Another sleep-less person just like you</h1>
+                                    </div><!-- /section-short-title -->
+
+
+                                    <!-- section-short-desc -->
+                                    <div class="section-short-desc">
+                                        <p>In XSleep, you can match to other sleep-less people just like you in the middle of a night. Share your stories and relax</p>
+                                    </div><!-- /section-short-desc -->
+
+
+                                    <!-- feature-box-style-2 -->
+                                    <div class="feature-box-style-2">
+
+                                        <!-- feature-icon -->
+                                        <div class="feature-icon">
+                                            <i class="fa fa-users" aria-hidden="true"></i>
+                                        </div><!-- /feature-icon -->
+
+                                        <!-- feature-title -->
+                                        <div class="feature-title">
+                                            <h4>Match buddies</h4>
+                                        </div><!-- /feature-title -->
+
+                                    </div><!-- /feature-box-style-2 -->
+
+
+                                    <!-- feature-box-style-2 -->
+                                    <div class="feature-box-style-2">
+
+                                        <!-- feature-icon -->
+                                        <div class="feature-icon">
+                                            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        </div><!-- /feature-icon -->
+
+                                        <!-- feature-title -->
+                                        <div class="feature-title">
+                                            <h4>View your buddy's activities</h4>
+                                        </div><!-- /feature-title -->
+
+                                    </div><!-- /feature-box-style-2 -->
+
+                                </div><!-- /col-md-6 no-pad-left -->
+
+
+                                <!-- col-md-6 no-pad-right -->
+                                <div class="col-md-6 no-pad-right">
+
+                                    <!-- feature-image -->
+                                    <div class="feature-image">
+                                        <img src="images/feature-images/social_matching.png" alt="Feature Image" />
+                                    </div><!-- /feature-image -->
+
+                                </div><!-- /col-md-6 no-pad-right -->
+
+
+                            </div><!-- /match -->
+
+                            <!-- decoration -->
+                            <div id="decoration">
+
+
+                                <!-- col-md-6 no-pad-left -->
+                                <div class="col-md-6 no-pad-left">
+
+                                    <!-- feature-image -->
+                                    <div class="feature-image">
+                                        <img src="images/feature-images/virtual_bedroom.png" alt="Feature Image" />
+                                    </div><!-- /feature-image -->
+
+                                </div><!-- /col-md-6 no-pad-left -->
+
+
+                                <!-- col-md-6 no-pad-right -->
+                                <div class="col-md-6 no-pad-right">
+
+
+                                    <!-- section-short-title -->
+                                    <div class="section-short-title">
+                                        <h1>Your space, your taste</h1>
+                                    </div><!-- /section-short-title -->
+
+
+                                    <!-- section-short-desc -->
+                                    <div class="section-short-desc">
+                                        <p>You can decorate your virtual bedroom and show your personality via the decoration</p>
+                                    </div><!-- /section-short-desc -->
+
+
+                                    <!-- feature-box-style-2 -->
+                                    <div class="feature-box-style-2">
+
+                                        <!-- feature-icon -->
+                                        <div class="feature-icon">
+                                            <i class="fa fa-home" aria-hidden="true"></i>
+                                        </div><!-- /feature-icon -->
+
+                                        <!-- feature-title -->
+                                        <div class="feature-title">
+                                            <h4>Decorate your room</h4>
+                                        </div><!-- /feature-title -->
+
+                                    </div><!-- /feature-box-style-2 -->
+
+
+                                    <!-- feature-box-style-2 -->
+                                    <div class="feature-box-style-2">
+
+                                        <!-- feature-icon -->
+                                        <div class="feature-icon">
+                                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                        </div><!-- /feature-icon -->
+
+                                        <!-- feature-title -->
+                                        <div class="feature-title">
+                                            <h4>Visit other's rooms</h4>
+                                        </div><!-- /feature-title -->
+
+                                    </div><!-- /feature-box-style-2 -->
+
+
+                                    <!-- feature-btns -->
+                                    <div class="feature-btns">
+                                        <a class="btn btn-lg btn-nesto" href="javascript:void(0)" title="Buy In App Store">
+                                            <i class="fa fa-apple"></i> Buy In App Store
+                                        </a>
+                                        <a class="btn btn-lg btn-nesto" href="javascript:void(0)" title="Buy In Google Play">
+                                            <i class="fa fa-android"></i> Buy In Google Play
+                                        </a>
+                                    </div><!-- /feature-btns -->
+
+
+                                </div><!-- /col-md-6 no-pad-right -->
+
+
+                            </div><!-- /decoration -->
+
+
+
+                        </div><!-- /WorksTabs -->
+
+
+                    </div><!-- /col-md-12 -->
+
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </section><!-- /works-section -->
+
+
+        <!-- =========================================
+        Arrows Section
+        ========================================== -->
+        <!-- arrows-section -->
+        <section class="arrows-section">
+            <a href="#price-section" title="VIP Plans" class="scrollto">
+                <i class="fa fa-angle-down"></i>
+            </a>
+            <a href="#works-section" title="How It Works" class="scrollto">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </section><!-- /arrows-section -->
+
+        <!-- =========================================
+        Price Section
+        ========================================== -->
+        <!-- price-section -->
+        <section id="price-section">
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+
+                    <!-- col-md-12 -->
+                    <div class="col-md-12">
+
+                        <!-- section-title -->
+                        <div class="section-title" data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:500, repeat: true}">
+                            <h1>VIP plans</h1>
+                        </div><!-- /section-title -->
+
+                        <!-- section-desc -->
+                        <div class="section-desc" data-uk-scrollspy="{cls:'uk-animation-fade', delay:700, repeat: true}">
+                            <p>XSleep is totally free to use, however you can purchase VIP plans to access our premium contents</p>
+                        </div><!-- /section-desc -->
+
+                    </div><!-- /col-md-12 -->
+
+                    <!-- col-md-6 -->
+                    <div class="col-md-6 col-sm-6">
+
+                        <!-- price-table -->
+                        <div class="price-table" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:700, repeat: true}">
+
+                            <!-- table-name -->
+                            <div class="table-name">
+                                <h1>Yearly</h1>
+                            </div><!-- /table-name -->
+
+                            <!-- table-desc -->
+                            <div class="table-desc">
+                                <p>Subscription renews every year</p>
+                            </div><!-- /table-desc -->
+
+                            <!-- table-price -->
+                            <div class="table-price">
+                                <h1>$69.99</h1>
+                            </div><!-- /table-price -->
+
+                            <!-- table-info -->
+                            <div class="table-info">
+                                <ul>
+                                    <li>Price discount</li>
+                                    <li>Premium audio</li>
+                                    <li>Exclusive decoration</li>
+                                    <li>More coins on daily check-in</li>
+                                    <li>Special color on in-app ID</li>
+                                </ul>
+                            </div><!-- /table-info -->
+                        </div><!-- /price-table -->
+
+                    </div><!-- /col-md-6 -->
+
+
+                    <!-- col-md-6 -->
+                    <div class="col-md-6 col-sm-6">
+
+                        <!-- price-table -->
+                        <div class="price-table" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:500, repeat: true}">
+
+                            <!-- table-name -->
+                            <div class="table-name">
+                                <h1>Monthly</h1>
+                            </div><!-- /table-name -->
+
+                            <!-- table-desc -->
+                            <div class="table-desc">
+                                <p>Subscription renews every month</p>
+                            </div><!-- /table-desc -->
+
+                            <!-- table-price -->
+                            <div class="table-price">
+                                <h1>$7.99</h1>
+                            </div><!-- /table-price -->
+
+                            <!-- table-info -->
+                            <div class="table-info">
+                                <ul>
+                                    <li>Premium audio</li>
+                                    <li>Exclusive decoration</li>
+                                    <li>More coins on daily check-in</li>
+                                    <li>Special color on in-app ID</li>
+                                </ul>
+                            </div><!-- /table-info -->
+
+                            <div>
+                                <br/>
+                                <br/>
+                            </div>
+
+                        </div><!-- /price-table -->
+
+                    </div><!-- /col-md-6 -->
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </section><!-- /price-section -->
+
+
+        <!-- =========================================
+        Arrows Section
+        ========================================== -->
+        <!-- arrows-section -->
+        <section class="arrows-section">
+            <a href="#reach-section" title="Contact Us" class="scrollto">
+                <i class="fa fa-angle-down"></i>
+            </a>
+            <a href="#price-section" title="VIP Plans" class="scrollto">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </section><!-- /arrows-section -->
+
+        <!-- =========================================
+        Reach Section
+        ========================================== -->
+        <!-- reach-section -->
+        <section id="reach-section">
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+
+                    <!-- col-md-12 -->
+                    <div class="col-md-12">
+
+                        <!-- section-title -->
+                        <div class="section-title" data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:500, repeat: true}">
+                            <h1>Contact Us</h1>
+                        </div><!-- /section-title -->
+
+                        <!-- section-desc -->
+                        <div class="section-desc" data-uk-scrollspy="{cls:'uk-animation-fade', delay:700, repeat: true}">
+                            <p>Please share anything that you want to let us know</p>
+                        </div><!-- /section-desc -->
+
+                    </div><!-- /col-md-12 -->
+
+
+
+                    <!-- form -->
+                    <form role="form" id="form" class="contactForm" method="post" action="php/send.php">
+
+
+                        <!-- Contact Name -->
+                        <div class="form-group" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:500, repeat: true}">
+
+                            <div class="controls">
+                                <input type="text" class="form-control requiredField" placeholder="Your name * Required" name="name">
+                            </div>
+
+                        </div><!-- /Contact Name -->
+
+
+
+                        <!-- Contact Mail -->
+                        <div class="form-group" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:500, repeat: true}">
+
+                            <div class="controls">
+                                <input type="email" class="form-control email requiredField" placeholder="Your email * Required" name="email">
+                            </div>
+
+                        </div><!-- /Contact Mail -->
+
+
+                        <!-- Contact Subject -->
+                        <div class="form-group" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:500, repeat: true}">
+
+                            <div class="controls">
+                                <input type="text" class="form-control requiredField" placeholder="Subject * Required" name="subject">
+                            </div>
+
+                        </div><!-- /Contact Subject -->
+
+
+
+                        <!-- Contact Message -->
+                        <div class="form-group" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:500, repeat: true}">
+
+                            <div class="controls">
+                                <textarea rows="10" class="form-control requiredField" placeholder="Your message * Required" name="message"></textarea>
+                            </div>
+
+                        </div><!-- /Contact Message -->
+
+                        <!-- Submit Button -->
+                        <div  data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:500, repeat: true}">
+                            <button type="submit" class="btn btn-lg submit">Submit</button>
+                        </div>
+
+
+                    </form><!-- /form -->
+
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </section><!-- /reach-section -->
+
+        <!-- =========================================
+        Arrows Section
+        ========================================== -->
+        <!-- arrows-section -->
+        <section class="arrows-section">
+            <a href="#subscribe-section" title="Subscribe" class="scrollto">
+                <i class="fa fa-angle-down"></i>
+            </a>
+            <a href="#reach-section" title="Contact Us" class="scrollto">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </section><!-- /arrows-section -->
+
+
+        <!-- =========================================
+        Subscribe Section
+        ========================================== -->
+        <!-- subscribe-section -->
+        <section id="subscribe-section">
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+
+                    <!-- col-md-12 -->
+                    <div class="col-md-12">
+
+                        <!-- section-title -->
+                        <div class="section-title" data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:500, repeat: true}">
+                            <h1>Subscribe</h1>
+                        </div><!-- /section-title -->
+
+                        <!-- section-desc -->
+                        <div class="section-desc" data-uk-scrollspy="{cls:'uk-animation-fade', delay:700, repeat: true}">
+                            <p>Subscribe us for our latest promotion and news</p>
+                        </div><!-- /section-desc -->
+
+                    </div><!-- /col-md-12 -->
+
+
+                    <!-- subscribe -->
+                    <div id="subscribe" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:500, repeat: true}">
+
+                        <!-- form -->
+                        <form id="sform" method="post" action="php/news-letter.php">
+
+                            <!-- Contact Mail -->
+                            <div class="form-group">
+
+                                <div class="controls">
+                                    <input type="email" class="form-control email srequiredField" placeholder="Enter your email" name="semail">
+                                </div>
+
+                            </div><!-- /Contact Mail -->
+
+                            <!-- Subscribe Button -->
+                            <button type="submit" class="btn btn-lg submit">Subscribe</button>
+
+                        </form><!-- /form -->
+                    </div><!-- /subscribe -->
+
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </section><!-- /subscribe-section -->
+
+
+
+
+        <!-- =========================================
+        Arrows Section
+        ========================================== -->
+        <!-- arrows-section -->
+        <section class="arrows-section">
+            <a href="#home-section" title="Home" class="scrollto">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </section><!-- /arrows-section -->
+
+        <!-- =========================================
+        Footer Section
+        ========================================== -->
+        <!-- footer-section -->
+        <section id="footer-section">
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+
+                    <!-- col-md-12 -->
+                    <div class="col-md-12">
+
+                        <!-- footer-social-icons -->
+                        <div class="footer-social-icons">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100082911560625" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                </li><li>
+                                    <a href="https://twitter.com/Xsleep_App" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                </li><li>
+                                    <a href="https://www.instagram.com/xsleep_app_/" title="Instagram"><i class="fa fa-instagram"></i>
+                                </li>
+                            </ul>
+                        </div><!-- /footer-social-icons -->
+
+                    </div><!-- /col-md-12 -->
+
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </section><!-- /footer-section -->
+
+
+
+
+        <!-- =========================================
+        java script
+        ========================================== -->
+        <script type="text/javascript" src="js/plugins/jquery-2.2.3/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/plugins/sliderTabs/jquery.sliderTabs.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.scrollto.js"></script>
+        <script type="text/javascript" src="js/plugins/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+        <script type="text/javascript" src="js/plugins/fancybox/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="js/plugins/fancybox/helpers/jquery.fancybox-media.js"></script>
+        <script type="text/javascript" src="assets/plugins/owl.carousel2/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.mlens-1.3.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="js/plugins/flickrfeed/jflickrfeed.min.js"></script>
+        <script type="text/javascript" src="js/plugins/supersized/supersized.3.2.7.min.js"></script>
+        <script type="text/javascript" src="js/plugins/uikit/uikit.js"></script>
+        <script type="text/javascript" src="js/plugins/retina-1.1.0.js"></script>
+        <script type="text/javascript" src="js/app-on.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="js/plugins/html5shiv.js"></script>
+            <script src="js/plugins/selectivizr.js"></script>
+        <![endif]-->
+
+    </body><!-- /body -->
+</html><!-- /html -->
